@@ -9,15 +9,19 @@ from typing import List
 
 
 def transform_simple(arr: List[int], l: int, r: int) -> List[int]:
-    pass
+    result = []
+    for el in arr:
+        if l <= el <= r: #(l <= el) and (el <= r)
+            result.append(el ** 2)
+    return result
 
 
 def transform_list_comprehensions(arr: List[int], l: int, r: int) -> List[int]:
-    pass
+    return [el**2 for el in arr if l <= el <= r]
 
 
 def transform_generators(arr: List[int], l: int, r: int) -> List[int]:
-    pass
+    return list(map(lambda x: x ** 2, filter(lambda x: l <= x <= r, arr)))
 
 
 """
@@ -86,5 +90,5 @@ def front_back(a: list, b: list) -> list:
 
 
 def remove_adjacent(a: list) -> list:
-    pass
+    return [x for x, y in zip(a, a[1:]) if x != y] + [a[-1]]
 
