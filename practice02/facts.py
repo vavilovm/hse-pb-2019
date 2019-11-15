@@ -8,7 +8,7 @@ people = [
     Person(github_login='example', first_name='Name', last_name='Surname',
            facts=['Fact-right.', 'Fact-write.', 'Fact-right.']),
     Person(github_login='gt22', first_name='Igor', last_name='Engel',
-           facts=['Питонячу где хочу', 'MLкаю в свободное время (которого нет)', 'Люблю svn']),
+           facts=['Питонячу где хочу', 'Люблю svn', 'MLкаю в свободное время (которого нет)']),
 ]
 
 answers = {}
